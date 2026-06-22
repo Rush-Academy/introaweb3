@@ -133,6 +133,7 @@ footer{border-top:1px solid var(--glass-b);padding:2rem 3rem;display:flex;align-
 .s1-btn{display:inline-flex;align-items:center;gap:.4rem;background:linear-gradient(30deg,#372887,#6959fb);color:#fff;text-decoration:none;padding:.45rem 1rem;border-radius:8px;font-size:.78rem;font-family:'Heebo',sans-serif;font-weight:700;transition:opacity .2s,transform .15s;letter-spacing:.02em}
 .s1-btn:hover{opacity:.85;transform:translateY(-1px)}
 .s1-btn-alt{background:rgba(105,89,251,0.15);border:1px solid rgba(105,89,251,0.4);color:#b0a6fd}
+.s1-btn-video{background:rgba(255,0,0,0.12);border:1px solid rgba(255,60,60,0.4);color:#ff6b6b}
 .s1-btn-alt:hover{background:rgba(105,89,251,0.25)}
 
 /* INSTRUCTORS */
@@ -272,6 +273,12 @@ footer{border-top:1px solid var(--glass-b);padding:2rem 3rem;display:flex;align-
   .hamburger{display:none!important}
   .mobile-menu{display:none!important}
 }
+
+.s1-video{margin-top:1.2rem;width:100%}
+.s1-video-label{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-family:'Heebo',sans-serif;font-weight:700;color:#ff4444;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.6rem}
+.s1-video-label svg{color:#ff4444;flex-shrink:0}
+.s1-video-wrap{position:relative;width:100%;padding-bottom:56.25%;border-radius:10px;overflow:hidden;background:#000}
+.s1-video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
 </style>
 </head>
 <body>
@@ -389,17 +396,31 @@ footer{border-top:1px solid var(--glass-b);padding:2rem 3rem;display:flex;align-
             Material del Estudiante
           </a>
         </div>
+        <a href="https://youtu.be/ZdQ2GVfNnac?si=tpIOyUQoLRvF0Kli" target="_blank" class="s1-btn s1-btn-video">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            Ver grabaci&oacute;n
+          </a>
       </div>
       <span class="badge badge-ok">Disponible</span>
     </div>
-    <div class="scard locked">
+    <div class="scard active">
       <div class="snum">02</div>
       <div>
         <div class="sweek">Semana 2</div>
-        <div class="stitle">Wallets, criptomonedas y transacciones</div>
-        <div class="sdesc">C&oacute;mo funcionan las wallets digitales, qu&eacute; son las llaves p&uacute;blicas y privadas, y c&oacute;mo se realizan transacciones en la blockchain.</div>
+        <div class="stitle">Tokenizaci&oacute;n y Econom&iacute;a Digital</div>
+        <div class="sdesc">La tokenizaci&oacute;n permite representar digitalmente activos, derechos, accesos o unidades de valor dentro de sistemas tecnol&oacute;gicos basados en registros distribuidos. Comprendamos la econom&iacute;a digital desde esta perspectiva.</div>
+        <div class="s1-links">
+          <a href="sesion-02/plan-de-clases.html" class="s1-btn" target="_blank">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            Plan de Clases
+          </a>
+          <a href="sesion-02/material-estudiante.html" class="s1-btn s1-btn-alt" target="_blank">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Material del Estudiante
+          </a>
+        </div>
       </div>
-      <span class="badge badge-soon">Pr&oacute;ximamente</span>
+      <span class="badge badge-ok">Disponible</span>
     </div>
     <div class="scard locked">
       <div class="snum">03</div>
